@@ -1,28 +1,24 @@
 """
 Você deve criar uma classe carro que vai possuir
 dois atributos compostos por outras duas classes:
-
-Motor
-Direção
+1) Motor
+2) Direção
 O Motor terá a responsabilidade de controlar a velocidade.
 Ele oferece os seguintes atributos:
-
-Atributo de dado velocidade
-Método acelerar, que deverá incremetar a velocidade de uma unidade
-Método frear que deverá decrementar a velocidade em duas unidades
+1) Atributo de dado velocidade
+2) Método acelerar, que deverá incremetar a velocidade de uma unidade
+3) Método frear que deverá decrementar a velocidade em duas unidades
 A Direção terá a responsabilidade de controlar a direção. Ela oferece
 os seguintes atributos:
-
-Valor de diração com valores possíveis: Norte, Sul, Leste, Oeste.
-Método girar_a_direita
-Método girar_a_esquerda
-
-       N
-    O     L
-       S
-
-Exemplo:
+1) Valor de diração com valores possíveis: Norte, Sul, Leste, Oeste.
+2) Método girar_a_direita
+2) Método girar_a_esquerda
+  N
+O   L
+  S
+    Exemplo:
     >>> # Testando motor
+    >>> from motor import Motor
     >>> motor = Motor()
     >>> motor.velocidade
     0
@@ -42,6 +38,7 @@ Exemplo:
     >>> motor.velocidade
     0
     >>> # Testando Direcao
+    >>> from direcao import Direcao
     >>> direcao = Direcao()
     >>> direcao.valor
     'Norte'
