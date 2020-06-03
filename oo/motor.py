@@ -7,8 +7,7 @@ class Motor:
 
     def frear(self):
         self.velocidade -= 2
-        if self.velocidade < 0:
-            self.velocidade = 0
+        self.velocidade = max(self.velocidade, 0)
 
 
 if __name__ == '__main__':
