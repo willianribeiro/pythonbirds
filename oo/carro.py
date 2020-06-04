@@ -18,7 +18,7 @@ O   L
   S
     Exemplo:
     >>> # Testando motor
-    >>> from motor import Motor
+    >>> from oo.motor import Motor
     >>> motor = Motor()
     >>> motor.velocidade
     0
@@ -38,7 +38,7 @@ O   L
     >>> motor.velocidade
     0
     >>> # Testando Direcao
-    >>> from direcao import Direcao
+    >>> from oo.direcao import Direcao
     >>> direcao = Direcao()
     >>> direcao.valor
     'Norte'
@@ -117,8 +117,8 @@ class Carro:
 
 
 if __name__ == '__main__':
-    from motor import Motor
-    from direcao import Direcao
+    from oo.motor import Motor
+    from oo.direcao import Direcao
 
     # Testando motor
     motor = Motor()
